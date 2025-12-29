@@ -6,6 +6,7 @@ info.description: "Advanced information and utility commands for monitoring and 
 info.about.name: "about"
 info.about.description: "Displays comprehensive information about the bot"
 info.about.embed.title: "About Plana"
+info.about.embed.github_repository: "GitHub Repository"
 info.about.embed.last_started: "Last Started"
 info.about.embed.version: "Version Info"
 info.about.embed.platform: "Platform"

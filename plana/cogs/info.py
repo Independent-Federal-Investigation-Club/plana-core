@@ -159,6 +159,12 @@ class PlanaInfo(commands.Cog):
             inline=False,
         )
 
+        embed.add_field(
+            name=Tr.t("info.about.embed.github_repository", locale=locale),
+            value="[GitHub Repository](https://github.com/Independent-Federal-Investigation-Club/project-plana)",
+            inline=False,
+        )
+
         # Statistics
         total_users = sum(g.member_count or 0 for g in self.core.guilds)
         embed.add_field(
