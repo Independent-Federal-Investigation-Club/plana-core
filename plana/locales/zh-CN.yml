@@ -10,6 +10,7 @@ info.about.embed.last_started: "最后启动时间"
 info.about.embed.version: "版本信息"
 info.about.embed.platform: "运行平台"
 info.about.embed.creator: "开发者"
+info.about.embed.github_repository: "GitHub 仓库"
 info.about.embed.server_count: "服务器统计"
 info.about.embed.server_stats: "%{guild_count} 个服务器 • %{user_count} 总用户\n平均: %.2f 用户/服务器"
 info.about.embed.shard_info: "分片信息"
@@ -445,6 +446,7 @@ levels.description: "带有xp追踪和奖励的服务器等级系统"
 
 # 通用响应
 levels.response.disabled: "此服务器的等级系统已禁用"
+levels.response.enabled: "此服务器的等级系统已启用"
 
 # 排名命令
 levels.rank.name: "排名"
@@ -466,3 +468,20 @@ levels.leaderboard.embed.title: "🏆 排行榜 - %{guild}"
 levels.leaderboard.embed.footer: "第 %{page} 页"
 levels.leaderboard.response.error: "加载排行榜失败"
 levels.leaderboard.response.empty: "未找到此服务器的等级数据"
+
+levels.toggle.name: "切换"
+levels.toggle.description: "启用或禁用服务器的等级系统"
+
+levels.give-xp.name: "给予经验"
+levels.give-xp.description: "给用户经验值"
+levels.give-xp.response.success: "成功给 %{user} 添加了 %{xp} 经验值"
+
+# RSS订阅管理
+rss.name: "RSS"
+rss.description: "用于服务器更新和通知的RSS订阅管理命令"
+rss.toggle.name: "切换"
+rss.toggle.description: "启用或禁用服务器的RSS订阅"
+rss.fetch.name: "获取"
+rss.fetch.description: "获取最新的RSS订阅更新"
+rss.latest.name: "最新"
+rss.latest.description: "显示特定订阅的最新RSS条目"
