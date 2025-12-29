@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.0.4 (2025-12-29)
+
+### Bug Fixes
+
+- Apply BeforeValidator for SnowflakeId
+  ([`01f4063`](https://github.com/Independent-Federal-Investigation-Club/plana-core/commit/01f4063dcc7552067a4b3d2e3a39e1bfbf99ad47))
+
+### Chores
+
+- **format**: Apply automatic formatting [skip ci]
+  ([`295eb4a`](https://github.com/Independent-Federal-Investigation-Club/plana-core/commit/295eb4a6e0c74aa7696f7c9a545d4988ed4fa796))
+
+
 ## v0.0.3 (2025-12-29)
 
 ### Bug Fixes

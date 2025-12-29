@@ -1,6 +1,6 @@
 [project]
 name = "plana-core"
-version = "0.0.3"
+version = "0.0.4"
 description = "Discord bot API backend with OAuth 2.0 authentication"
 readme = "README.md"
 requires-python = ">=3.12"
