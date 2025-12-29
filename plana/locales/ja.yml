@@ -154,7 +154,7 @@ message.prune.regex.description: "正規表現パターンにマッチするメ�
 message.prune.regex.response.invalid_pattern: "無効な正規表現パターン：%{error}"
 message.prune.invites.name: "招待リンク"
 message.prune.invites.description: "Discord招待リンクを含むメッセージを削除"
-message.prune.urls.name: "URL"
+message.prune.urls.name: "urls"
 message.prune.urls.description: "外部URLを含むメッセージを削除"
 
 message.prune.self.name: "自分"
@@ -172,7 +172,7 @@ moderation.name: "モデレーション"
 moderation.description: "サーバーメンバーを管理するためのモデレーションコマンド"
 
 # Banコマンド
-moderation.ban.name: "BAN"
+moderation.ban.name: "ban"
 moderation.ban.description: "サーバーからメンバーをBAN"
 moderation.ban.param.member.name: "メンバー"
 moderation.ban.param.member.description: "BANするメンバー"
@@ -194,7 +194,7 @@ moderation.ban.response.forbidden: "メンバーをBANする権限がありま�
 moderation.ban.response.error: "メンバーのBANに失敗しました：%{error}"
 
 # UnBanコマンド
-moderation.unban.name: "BAN解除"
+moderation.unban.name: "unban"
 moderation.unban.description: "サーバーからユーザーのBANを解除"
 moderation.unban.param.user.name: "ユーザー"
 moderation.unban.param.user.description: "BAN解除するユーザーIDまたはユーザー名#識別子"
@@ -472,12 +472,12 @@ levels.leaderboard.response.empty: "このサーバーのレベルデータが�
 levels.toggle.name: "切り替え"
 levels.toggle.description: "サーバーのレベルシステムを有効または無効にする"
 
-levels.give-xp.name: "XP付与"
+levels.give-xp.name: "give-xp"
 levels.give-xp.description: "ユーザーにXPを付与"
 levels.give-xp.response.success: "%{user}に%{xp}XPを正常に付与しました"
 
 # RSSフィード管理
-rss.name: "RSS"
+rss.name: "rss"
 rss.description: "サーバー更新と通知のためのRSSフィード管理コマンド"
 rss.toggle.name: "切り替え"
 rss.toggle.description: "サーバーのRSSフィードを有効または無効にする"

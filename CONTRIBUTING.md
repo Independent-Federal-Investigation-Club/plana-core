@@ -1,6 +1,6 @@
-# Contributing to Project Plana
+# Contributing to Project-Plana
 
-Thank you for your interest in contributing to Project Plana! This document outlines the process for contributing to the project and helps ensure a smooth collaboration experience.
+Thank you for your interest in contributing to Project-Plana! This document outlines the process for contributing to the project and helps ensure a smooth collaboration experience.
 
 ## Table of Contents
 - [Code of Conduct](#code-of-conduct)
@@ -20,7 +20,7 @@ We expect all contributors to treat each other with respect and maintain a posit
 
 ## Development Workflow
 
-Project Plana follows a structured development workflow with three main branches:
+Project-Plana follows a structured development workflow with three main branches:
 
 ```
 Feature Branch → dev → staging → main (production)
@@ -48,7 +48,7 @@ This graduated deployment approach ensures stability in production while allowin
 2. Clone your fork:
 ```bash
 git clone https://github.com/your-username/plana-core.git
-cd Project plana-core
+cd plana-core
 ```
 3. Add the upstream repository as a remote:
 ```bash
@@ -66,7 +66,7 @@ pip install -e .[dev]
 
 ## Code Style and Standards
 
-Project Plana uses automated formatting tools to maintain consistent code style:
+Project-Plana uses automated formatting tools to maintain consistent code style:
 
 - **Black**: For Python code formatting
 - **isort**: For import sorting (with Black compatibility profile)
@@ -145,4 +145,4 @@ Breaking changes should be noted with `BREAKING CHANGE:` in the commit message, 
 
 ---
 
-Thank you for contributing to Project Plana! Your time and expertise help make this project better for everyone.
+Thank you for contributing to Project-Plana! Your time and expertise help make this project better for everyone.
