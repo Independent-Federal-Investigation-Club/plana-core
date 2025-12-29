@@ -1,6 +1,19 @@
 # CHANGELOG
 
 
+## v0.0.2 (2025-12-29)
+
+### Bug Fixes
+
+- Text channel can have no catagory id, fix i18n error,
+  ([`c26201a`](https://github.com/Independent-Federal-Investigation-Club/plana-core/commit/c26201ae1425d10b99ece977d617b5e8a4b6aea8))
+
+### Chores
+
+- Typo fix
+  ([`bb11d19`](https://github.com/Independent-Federal-Investigation-Club/plana-core/commit/bb11d190b5456f3e31fa54d3dca514e5c68ce94e))
+
+
 ## v0.0.1 (2025-12-29)
 
 ### Bug Fixes
