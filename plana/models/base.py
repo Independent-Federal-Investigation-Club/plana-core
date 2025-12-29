@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Annotated, Optional
 
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, BeforeValidator
 
 
 def snowflake_validator(v: Optional[str]) -> Optional[int]:
@@ -10,11 +10,13 @@ def snowflake_validator(v: Optional[str]) -> Optional[int]:
         return None
     if isinstance(v, str) and v.isdigit():
         return int(v)
+    if isinstance(v, int):
+        return v
     return v
 
 
-# Custom type for snowflake IDs with validator
-SnowflakeId = Annotated[Optional[int], Field(), snowflake_validator]
+# Use BeforeValidator to actually apply the validator
+SnowflakeId = Annotated[Optional[int], BeforeValidator(snowflake_validator)]
 
 
 class PlanaModel(BaseModel):
