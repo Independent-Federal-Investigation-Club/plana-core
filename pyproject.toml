@@ -1,0 +1,46 @@
+[project]
+name = "plana-core"
+version = "0.1.0"
+description = "Discord bot API backend with OAuth 2.0 authentication"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "discord-pretty-help>=2.0.7",
+    "discord-py[voice]>=2.6.4",
+    "docstring-parser>=0.17.0",
+    "emoji>=2.14.1",
+    "feedparser>=6.0.11",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "openai>=1.98.0",
+    "psutil>=7.0.0",
+    "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
+    "python-i18n>=0.3.9",
+    "pytz>=2025.2",
+    "pyyaml>=6.0.2",
+    "redis>=7.1.0",
+    "yt-dlp[default]>=2025.12.8",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.pyi?$'
+
+[dependency-groups]
+dev = [
+    "black>=25.1.0",
+    "isort>=6.0.1",
+    "ruff>=0.12.3",
+]
+
+
+[tool.semantic_release]
+tag_format = "v{version}"
+version_toml = ["pyproject.toml:project.version"]
+version_variables = ["plana/_version.py:__version__"]
+build_command = "python -m pip install build && python -m build"
+commit_parser = "conventional"
+commit_message = "chore(release): bump version to v{version} [skip ci]"
+commit_author = "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
