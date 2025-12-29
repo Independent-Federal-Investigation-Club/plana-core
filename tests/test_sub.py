@@ -1,6 +1,7 @@
 import asyncio
+
 from plana.models.message import Message
-from plana.services.sub import RedisEventSubscriber, PlanaEvents, EventPayload
+from plana.services.sub import EventPayload, PlanaEvents, RedisEventSubscriber
 
 
 async def handle_message_create(event_data: EventPayload):

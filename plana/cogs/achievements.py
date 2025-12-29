@@ -1,15 +1,19 @@
-from typing import TYPE_CHECKING, Union, Optional, List, Dict, Tuple
 import re
+from datetime import datetime, timezone
+from typing import TYPE_CHECKING, Dict, List, Optional, Tuple, Union
 
 import discord
 from discord.ext import commands
-from datetime import datetime, timezone
+from loguru import logger
 from pydantic import BaseModel, Field
 
-from loguru import logger
-
+from plana.models.achievements import (
+    AchievementSetting,
+    CirteriaType,
+    CustomAchievement,
+    UserStats,
+)
 from plana.services.manager import GuildManager, UserManager
-from plana.models.achievements import AchievementSetting, CustomAchievement, UserStats, CirteriaType
 
 if TYPE_CHECKING:
     from plana.utils.core import PlanaCore

@@ -1,9 +1,8 @@
 import asyncio
-import aiohttp
 import os
 
+import aiohttp
 from dotenv import load_dotenv
-
 
 # Test configuration
 BASE_URL = "http://localhost:8000"  # Adjust if your API runs on different port

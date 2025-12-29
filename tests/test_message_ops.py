@@ -1,16 +1,18 @@
 import asyncio
+
 from dotenv import load_dotenv
-from plana.models.react_role import ReactRoleSetting, RoleAssignment
+
 from plana.models.message import (
-    Message,
+    Button,
     Embed,
     EmbedField,
     EmbedFooter,
-    Button,
+    Emoji,
+    Message,
     SelectMenu,
     SelectOption,
-    Emoji,
 )
+from plana.models.react_role import ReactRoleSetting, RoleAssignment
 
 
 async def test_create_react_role(guild_id: int, message_id: int):

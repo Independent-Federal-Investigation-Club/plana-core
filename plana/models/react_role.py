@@ -1,9 +1,11 @@
 from datetime import datetime
 from typing import List, Optional, Union
+
 from pydantic import Field
-from .base import PlanaModel, SnowflakeId
 
 from plana.utils.helper import make_api_request
+
+from .base import PlanaModel, SnowflakeId
 
 
 class RoleAssignment(PlanaModel):

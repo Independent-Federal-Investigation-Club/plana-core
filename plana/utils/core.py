@@ -5,10 +5,10 @@ import discord
 from discord.ext.commands import AutoShardedBot
 from loguru import logger
 
+from plana.services.manager import GuildManager
 from plana.utils.context import PlanaContext
 from plana.utils.helper import format_traceback
 from plana.utils.translate import PlanaTranslator
-from plana.services.manager import GuildManager
 
 if TYPE_CHECKING:
     from datetime import datetime

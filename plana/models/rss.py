@@ -1,10 +1,11 @@
-from typing import Optional, Union, List
+from datetime import datetime
+from typing import List, Optional, Union
+
 from pydantic import Field
 
-from datetime import datetime
+from plana.utils.helper import make_api_request
 
 from .base import PlanaModel, SnowflakeId
-from plana.utils.helper import make_api_request
 
 
 class RssFeed(PlanaModel):

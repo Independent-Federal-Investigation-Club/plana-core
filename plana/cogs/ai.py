@@ -1,24 +1,25 @@
-from plana.models.base import SnowflakeId
-from typing import TYPE_CHECKING, Optional, List, AsyncGenerator, Union
-
-import re
 import random
+import re
+from datetime import datetime, timezone
+from typing import TYPE_CHECKING, AsyncGenerator, List, Optional, Union
+
 import discord
 from discord.ext import commands
-
-from datetime import datetime, timezone
-
 from loguru import logger
-from plana.services.manager import GuildManager
-from plana.services.agent import ChatRequest, PlanaAgent
 
 from plana.models.ai import AISetting
-from plana.utils.helper import datetime_formatter, format_template_message, format_traceback
-
+from plana.models.base import SnowflakeId
+from plana.services.agent import ChatRequest, PlanaAgent
+from plana.services.manager import GuildManager
+from plana.utils.helper import (
+    datetime_formatter,
+    format_template_message,
+    format_traceback,
+)
 
 if TYPE_CHECKING:
-    from plana.utils.core import PlanaCore
     from plana.utils.context import PlanaContext
+    from plana.utils.core import PlanaCore
 
 
 class PlanaAI(commands.Cog):

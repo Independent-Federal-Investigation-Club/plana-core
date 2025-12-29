@@ -1,19 +1,19 @@
-import random
-from typing import TYPE_CHECKING, Optional, List
-from datetime import datetime, timezone
 import asyncio
+import random
+from datetime import datetime, timezone
+from typing import TYPE_CHECKING, List, Optional
+
 import aiohttp
-import feedparser
-
 import discord
+import feedparser
 from discord.ext import commands, tasks
-
 from loguru import logger
+
+from plana.models.rss import RssFeed
 from plana.services.manager import GuildManager
 from plana.ui.embeds import embed_template
-from plana.utils.translate import PlanaLocaleStr
 from plana.utils.context import PlanaContext
-from plana.models.rss import RssFeed, RssFeed
+from plana.utils.translate import PlanaLocaleStr
 
 if TYPE_CHECKING:
     from plana.utils.core import PlanaCore
