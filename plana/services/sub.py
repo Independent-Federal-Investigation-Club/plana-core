@@ -1,14 +1,13 @@
 import os
 import traceback
+from datetime import datetime, timezone
 from enum import Enum
 from typing import Any, Callable, Dict, Optional
-from datetime import datetime, timezone
 
 import redis.asyncio as aioredis
-from redis.asyncio.client import PubSub
-
 from loguru import logger
 from pydantic import BaseModel, Field
+from redis.asyncio.client import PubSub
 
 from plana.models.message import Message
 

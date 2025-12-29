@@ -1,18 +1,20 @@
 # Models copied from the Plana API
 
-from typing import Optional, Union, List, TYPE_CHECKING
+from typing import TYPE_CHECKING, List, Optional, Union
 
 from pydantic import Field
+
 from plana.utils.helper import make_api_request
-from .discord import (
-    GuildUser,
-    GuildRole,
-    GuildEmoji,
-    GuildSticker,
-    TextChannel,
-    GuildCategory,
-)
+
 from .base import PlanaModel, SnowflakeId
+from .discord import (
+    GuildCategory,
+    GuildEmoji,
+    GuildRole,
+    GuildSticker,
+    GuildUser,
+    TextChannel,
+)
 
 if TYPE_CHECKING:
     from discord import Guild as DiscordGuild

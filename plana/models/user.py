@@ -1,9 +1,11 @@
 # Models copied from the Plana API
 
-from typing import Optional, Union, TypeVar
+from typing import Optional, TypeVar, Union
 
 from pydantic import BaseModel, Field
+
 from plana.utils.helper import make_api_request
+
 from .base import PlanaModel, SnowflakeId
 
 

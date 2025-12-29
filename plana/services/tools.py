@@ -5,12 +5,12 @@ This module provides various tools that the AI agent can use to interact
 with Discord features and provide useful information to users.
 """
 
-import re
 import random
-import docstring_parser
-
+import re
+from inspect import getdoc, signature
 from typing import List, get_type_hints
-from inspect import signature, getdoc
+
+import docstring_parser
 
 
 def get_function_specs(func):

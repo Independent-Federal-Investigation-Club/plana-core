@@ -1,14 +1,14 @@
-from typing import TYPE_CHECKING, Union, Optional, List
+from typing import TYPE_CHECKING, List, Optional, Union
 
 import discord
 from discord.ext import commands
-
 from loguru import logger
+
 from plana.services.manager import GuildManager
 
 if TYPE_CHECKING:
-    from plana.utils.core import PlanaCore
     from plana.models.react_role import ReactRoleSetting, RoleAssignment
+    from plana.utils.core import PlanaCore
 
 
 class PlanaRole(commands.Cog):

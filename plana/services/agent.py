@@ -1,7 +1,8 @@
 import os
-from typing import Optional, AsyncGenerator, List, Optional
+from typing import AsyncGenerator, List, Optional
 
 from loguru import logger
+
 from plana.services.openai import OpenAI
 
 

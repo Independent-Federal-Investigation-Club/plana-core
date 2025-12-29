@@ -5,16 +5,14 @@ from typing import Dict, Optional
 
 import discord
 import psutil
-
 from discord.ext import commands
 
+from plana.services.manager import GuildManager
 from plana.ui.embeds import embed_template
 from plana.utils.context import PlanaContext
 from plana.utils.core import PlanaCore
 from plana.utils.helper import format_date_value
-from plana.utils.translate import Tr, PlanaLocaleStr
-
-from plana.services.manager import GuildManager
+from plana.utils.translate import PlanaLocaleStr, Tr
 
 
 class InfoView(discord.ui.View):

@@ -1,13 +1,13 @@
-from typing import Union, Optional, List, Self
-
-from enum import StrEnum
-
 from datetime import datetime
+from enum import StrEnum
+from typing import List, Optional, Self, Union
+
 from pydantic import Field
+
 from plana.utils.helper import make_api_request
 
-from .message import Message
 from .base import PlanaModel, SnowflakeId
+from .message import Message
 
 
 class UserStats(PlanaModel):

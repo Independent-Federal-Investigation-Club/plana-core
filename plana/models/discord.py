@@ -1,19 +1,19 @@
 # Copy from the Plana-API Database models
 
-from typing import Optional, TYPE_CHECKING
-from pydantic import Field
+from typing import TYPE_CHECKING, Optional
+
 import discord
+from pydantic import Field
+
 from .base import PlanaModel, SnowflakeId
 
 if TYPE_CHECKING:
-    from discord import (
-        User as DiscordUser,
-        Role as DiscordRole,
-        GuildSticker as DiscordSticker,
-        Emoji as DiscordEmoji,
-        CategoryChannel as DiscordCategory,
-    )
+    from discord import CategoryChannel as DiscordCategory
+    from discord import Emoji as DiscordEmoji
+    from discord import GuildSticker as DiscordSticker
+    from discord import Role as DiscordRole
     from discord import TextChannel as DiscordTextChannel
+    from discord import User as DiscordUser
 
 
 class GuildUser(PlanaModel):

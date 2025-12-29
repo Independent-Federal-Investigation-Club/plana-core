@@ -1,6 +1,6 @@
-import time
 import random
-from typing import TYPE_CHECKING, Dict, List, Optional, Tuple, Any
+import time
+from typing import TYPE_CHECKING, Any, Dict, List, Optional, Tuple
 from venv import logger
 
 import discord
@@ -12,10 +12,9 @@ from plana.models.levels import (
     LevelSetting,
     UserLevelData,
 )
-
-from plana.services.manager import UserManager, GuildManager
+from plana.services.manager import GuildManager, UserManager
 from plana.utils.context import PlanaContext
-from plana.utils.translate import Tr, PlanaLocaleStr
+from plana.utils.translate import PlanaLocaleStr, Tr
 
 if TYPE_CHECKING:
     from plana.utils.core import PlanaCore
