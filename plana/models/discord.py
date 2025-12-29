@@ -145,7 +145,9 @@ class TextChannel(PlanaModel):
     """
 
     channel_id: SnowflakeId = Field(..., description="Discord Channel ID")
-    category_id: SnowflakeId = Field(..., description="ID of the category this channel belongs to")
+    category_id: Optional[SnowflakeId] = Field(
+        None, description="ID of the category this channel belongs to"
+    )
     name: str = Field(..., max_length=100, description="Name of the channel")
     position: int = Field(0, description="Position of the channel in the list")
     topic: Optional[str] = Field(None, max_length=1024, description="Channel topic")

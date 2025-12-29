@@ -477,7 +477,7 @@ levels.give-xp.description: "给用户经验值"
 levels.give-xp.response.success: "成功给 %{user} 添加了 %{xp} 经验值"
 
 # RSS订阅管理
-rss.name: "RSS"
+rss.name: "rss"
 rss.description: "用于服务器更新和通知的RSS订阅管理命令"
 rss.toggle.name: "切换"
 rss.toggle.description: "启用或禁用服务器的RSS订阅"
