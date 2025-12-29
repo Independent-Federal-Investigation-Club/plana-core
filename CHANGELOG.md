@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.0.3 (2025-12-29)
+
+### Bug Fixes
+
+- Update i18n, and Snowflake validation fix
+  ([`ae84d86`](https://github.com/Independent-Federal-Investigation-Club/plana-core/commit/ae84d8600fc4b3aeed27372c37d6d0ccb6d83fc4))
+
+
 ## v0.0.2 (2025-12-29)
 
 ### Bug Fixes
