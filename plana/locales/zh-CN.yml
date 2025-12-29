@@ -154,7 +154,7 @@ message.prune.regex.description: "删除匹配正则表达式模式的消息"
 message.prune.regex.response.invalid_pattern: "无效的正则模式：%{error}"
 message.prune.invites.name: "邀请"
 message.prune.invites.description: "删除包含Discord邀请链接的消息"
-message.prune.urls.name: "链接"
+message.prune.urls.name: "urls"
 message.prune.urls.description: "删除包含外部URL的消息"
 
 message.prune.self.name: "自己"
@@ -168,11 +168,11 @@ message.prune.self.response.no_messages: "没有找到您的消息可供删除"
 message.prune.self.response.server_wide_success: "成功从 %{channels} 个频道删除了您的 %{count} 条消息"
 
 # 管理员命令
-moderation.name: "管理"
+moderation.name: "moderation"
 moderation.description: "用于管理服务器成员的管理命令"
 
 # 封禁命令
-moderation.ban.name: "封禁"
+moderation.ban.name: "ban"
 moderation.ban.description: "从服务器封禁成员"
 moderation.ban.param.member.name: "成员"
 moderation.ban.param.member.description: "要封禁的成员"
@@ -194,7 +194,7 @@ moderation.ban.response.forbidden: "我没有封禁成员的权限"
 moderation.ban.response.error: "封禁成员失败：%{error}"
 
 # 解封命令
-moderation.unban.name: "解封"
+moderation.unban.name: "unban"
 moderation.unban.description: "从服务器解封用户"
 moderation.unban.param.user.name: "用户"
 moderation.unban.param.user.description: "要解封的用户ID或用户名#标识符"
@@ -208,7 +208,7 @@ moderation.unban.response.forbidden: "我没有解封成员的权限"
 moderation.unban.response.error: "解封用户失败：%{error}"
 
 # 踢出命令
-moderation.kick.name: "踢出"
+moderation.kick.name: "kick"
 moderation.kick.description: "从服务器踢出成员"
 moderation.kick.param.member.name: "成员"
 moderation.kick.param.member.description: "要踢出的成员"
@@ -223,7 +223,7 @@ moderation.kick.response.forbidden: "我没有踢出成员的权限"
 moderation.kick.response.error: "踢出成员失败：%{error}"
 
 # 超时命令
-moderation.timeout.name: "超时"
+moderation.timeout.name: "timeout"
 moderation.timeout.description: "超时成员（阻止他们发送消息）"
 moderation.timeout.param.member.name: "成员"
 moderation.timeout.param.member.description: "要超时的成员"
@@ -472,7 +472,7 @@ levels.leaderboard.response.empty: "未找到此服务器的等级数据"
 levels.toggle.name: "切换"
 levels.toggle.description: "启用或禁用服务器的等级系统"
 
-levels.give-xp.name: "给予经验"
+levels.give-xp.name: "give-xp"
 levels.give-xp.description: "给用户经验值"
 levels.give-xp.response.success: "成功给 %{user} 添加了 %{xp} 经验值"
 

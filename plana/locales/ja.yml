@@ -168,7 +168,7 @@ message.prune.self.response.no_messages: "削除する対象のメッセージ�
 message.prune.self.response.server_wide_success: "%{channels}個のチャンネルからあなたの%{count}件のメッセージを正常に削除しました"
 
 # モデレーションコマンド
-moderation.name: "モデレーション"
+moderation.name: "moderation"
 moderation.description: "サーバーメンバーを管理するためのモデレーションコマンド"
 
 # Banコマンド
@@ -208,7 +208,7 @@ moderation.unban.response.forbidden: "メンバーのBAN解除権限がありま
 moderation.unban.response.error: "ユーザーのBAN解除に失敗しました：%{error}"
 
 # Kickコマンド
-moderation.kick.name: "キック"
+moderation.kick.name: "kick"
 moderation.kick.description: "サーバーからメンバーをキック"
 moderation.kick.param.member.name: "メンバー"
 moderation.kick.param.member.description: "キックするメンバー"
@@ -223,7 +223,7 @@ moderation.kick.response.forbidden: "メンバーをキックする権限があ�
 moderation.kick.response.error: "メンバーのキックに失敗しました：%{error}"
 
 # タイムアウトコマンド
-moderation.timeout.name: "タイムアウト"
+moderation.timeout.name: "timeout"
 moderation.timeout.description: "メンバーをタイムアウト（メッセージ送信を禁止）"
 moderation.timeout.param.member.name: "メンバー"
 moderation.timeout.param.member.description: "タイムアウトするメンバー"
@@ -242,7 +242,7 @@ moderation.timeout.response.forbidden: "メンバーをタイムアウトする�
 moderation.timeout.response.error: "メンバーのタイムアウトに失敗しました：%{error}"
 
 # タイムアウト解除コマンド
-moderation.untimeout.name: "タイムアウト解除"
+moderation.untimeout.name: "untimeout"
 moderation.untimeout.description: "メンバーからタイムアウトを解除"
 moderation.untimeout.param.member.name: "メンバー"
 moderation.untimeout.param.member.description: "タイムアウトを解除するメンバー"

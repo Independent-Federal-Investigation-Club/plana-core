@@ -168,7 +168,7 @@ message.prune.self.response.no_messages: "No se encontraron mensajes tuyos para 
 message.prune.self.response.server_wide_success: "Se eliminaron exitosamente %{count} de tus mensajes de %{channels} canales"
 
 # Comandos de Moderación
-moderation.name: "moderación"
+moderation.name: "moderation"
 moderation.description: "Comandos de moderación para gestionar miembros del servidor"
 
 # Comando de Ban
@@ -472,7 +472,7 @@ levels.leaderboard.response.empty: "No se encontraron datos de nivel para este s
 levels.toggle.name: "alternar"
 levels.toggle.description: "Habilitar o deshabilitar el sistema de niveles en el servidor"
 
-levels.give-xp.name: "dar-xp"
+levels.give-xp.name: "give-xp"
 levels.give-xp.description: "Dar XP a un usuario"
 levels.give-xp.response.success: "Se dieron exitosamente %{xp} XP a %{user}"
 
