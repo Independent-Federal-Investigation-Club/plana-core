@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Annotated, Optional
 
-from pydantic import BaseModel, ConfigDict, BeforeValidator
+from pydantic import BaseModel, BeforeValidator, ConfigDict
 
 
 def snowflake_validator(v: Optional[str]) -> Optional[int]:
