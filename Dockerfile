@@ -19,9 +19,9 @@ RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 
 # Copy requirements and install external dependencies in the virtual environment
-COPY requirements.txt .
+COPY pyproject.toml ./
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
+    pip install --no-cache-dir -e .
 
 # Copy the source code
 COPY . .
